@@ -29,7 +29,7 @@ sudo apt install curl wget git python3 python3-pip virtualenv -y
 IQ_DAEMON_USER_PASS=`head /dev/urandom | tr -dc A-Za-z0-9 | head -c 32 ; echo ""`
 IQ_DAEMON_RPC_PASS=`head /dev/urandom | tr -dc A-Za-z0-9 | head -c 24 ; echo ""`
 MN_NAME_PREFIX=`head /dev/urandom | tr -dc A-Za-z0-9 | head -c 6 ; echo ""`
-MN_EXTERNAL_IP=`curl -s ifconfig.co`
+MN_EXTERNAL_IP=`curl -s -4 ifconfig.co`
 
 sudo useradd -U -m iqcash -s /bin/bash
 echo "iqcash:${IQ_DAEMON_USER_PASS}" | sudo chpasswd
