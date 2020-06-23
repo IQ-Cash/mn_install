@@ -16,7 +16,7 @@
 # along with mn_install.sh. If not, see <http://www.gnu.org/licenses/>
 #
 
-# Only Ubuntu 16.04 supported at this moment.
+# Tested on Ubuntu 16.04, 18.04
 
 set -o errexit
 
