@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2018 IQcash Team
+# Copyright (C) 2018-2020 IQcash Team
 #
 # mn_install.sh is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Lesser General Public License as published
@@ -16,7 +16,7 @@
 # along with mn_install.sh. If not, see <http://www.gnu.org/licenses/>
 #
 
-# Tested on Ubuntu 16.04, 18.04
+# Tested on Ubuntu 16.04, 18.04, 20.04
 
 set -o errexit
 
@@ -33,7 +33,7 @@ MN_EXTERNAL_IP=`curl -s -4 https://api.ipify.org/`
 
 sudo useradd -U -m iqcash -s /bin/bash
 echo "iqcash:${IQ_DAEMON_USER_PASS}" | sudo chpasswd
-sudo wget https://github.com/IQ-Cash/iqcash/releases/download/v0.8.3.2/iqcash-cli-linux.tar.gz --directory-prefix /home/iqcash/
+sudo wget https://github.com/IQ-Cash/iqcash/releases/download/v0.8.3.3/iqcash-cli-linux.tar.gz --directory-prefix /home/iqcash/
 sudo tar -xzvf /home/iqcash/iqcash-cli-linux.tar.gz -C /home/iqcash/
 sudo rm /home/iqcash/iqcash-cli-linux.tar.gz
 sudo mkdir /home/iqcash/.iqcashcore/
