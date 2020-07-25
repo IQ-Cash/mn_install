@@ -18,4 +18,4 @@ echo "Starting node..."
 sudo systemctl start iqcash
 
 echo "========================================="
-echo "Masternode upgrade to v0.8.4.1 completed!"
+echo "Masternode upgrade to v0.8.4.2 completed!"
