@@ -33,7 +33,7 @@ MN_EXTERNAL_IP=`curl -s -4 https://api.ipify.org/`
 
 sudo useradd -U -m iqcash -s /bin/bash
 echo "iqcash:${IQ_DAEMON_USER_PASS}" | sudo chpasswd
-sudo wget https://github.com/IQ-Cash/iqcash/releases/download/v0.8.4.1/iqcash-cli-linux.tar.gz --directory-prefix /home/iqcash/
+sudo wget https://github.com/IQ-Cash/iqcash/releases/download/v0.8.4.2/iqcash-cli-linux.tar.gz --directory-prefix /home/iqcash/
 sudo tar -xzvf /home/iqcash/iqcash-cli-linux.tar.gz -C /home/iqcash/
 sudo rm /home/iqcash/iqcash-cli-linux.tar.gz
 sudo mkdir /home/iqcash/.iqcashcore/
